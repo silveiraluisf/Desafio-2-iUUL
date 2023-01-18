@@ -11,5 +11,6 @@ class Program
         ConvertRequestController crc = new ConvertRequestController();
         menu.Title();
         await crc.GetCurrencyConverter();
+        await Main();
     }
 }

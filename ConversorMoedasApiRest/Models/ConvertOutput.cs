@@ -50,5 +50,5 @@ namespace ConversorMoedasAPI.Models
 
         [JsonPropertyName("result")]
         public double result { get; set; }
-    }
+    }   
 }
