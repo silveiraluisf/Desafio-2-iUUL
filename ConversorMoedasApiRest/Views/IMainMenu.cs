@@ -41,8 +41,8 @@ namespace ConversorMoedasApiRest.Views
             Console.WriteLine($"Moeda destino: {root.query.to}");
             Console.WriteLine($"Valor: {root.query.amount} \n");
 
-            Console.WriteLine($"{root.query.from} {root.query.amount} => {root.query.to} {root.result} \n");
-            Console.WriteLine($"Taxa: {root.info.rate} \n");
+            Console.WriteLine($"{root.query.from} {root.query.amount} => {root.query.to} {root.result.ToString("F")} \n");
+            Console.WriteLine($"Taxa: {root.info.rate.ToString("F6")} \n");
         }
 
         public void ErrorMessage()
